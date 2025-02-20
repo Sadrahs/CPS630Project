@@ -1,26 +1,31 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #f8f8f8; /* Light Gray Background */
+    color: black; /* Black Text */
     text-align: center;
 }
 
+/* Header */
 header {
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 0;
+    background-color: black; /* Black Header */
+    color: gold; /* Gold Text */
+    padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px 50px;
 }
 
+/* Logo */
 .logo img {
     height: 50px;
     margin-right: 10px;
 }
 
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -32,26 +37,37 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* White Text */
     text-decoration: none;
     font-size: 18px;
 }
 
+nav ul li a:hover {
+    color: gold; /* Gold on Hover */
+}
+
+/* Hero Section */
 .hero {
     padding: 50px;
-    background: #e3f2fd;
+    background: #e0e0e0; /* Darker Gray Background */
 }
 
 .hero h2 {
-    color: #007BFF;
+    color: black; /* Black Heading */
 }
 
 .btn {
     display: inline-block;
-    background: #007BFF;
-    color: white;
+    background: gold; /* Gold Button */
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     margin-top: 10px;
     border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: black; /* Black on Hover */
+    color: white;
 }
