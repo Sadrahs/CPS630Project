@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery - OSP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/delivery.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="delivery.html">Delivery</a></li>
+                <li><a href="payment.html">Payment</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="cart.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Select Your Delivery Options</h2>
+
+        <form id="deliveryForm">
+            <label for="location">Select Delivery Location:</label>
+            <select id="location">
+                <option value="Toronto">Toronto</option>
+                <option value="Vancouver">Vancouver</option>
+                <option value="Montreal">Montreal</option>
+            </select>
+
+            <label for="date">Select Delivery Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="button" onclick="showDeliveryRoute()">Show Delivery Route</button>
+        </form>
+
+        <h3>Delivery Route:</h3>
+        <div id="map" style="height: 400px; width: 100%;"></div>
+    </section>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXJa3tMgb3JKQ9v3AIXZKdKnaG969p10Q&callback=initMap"></script>
+
+</body>
+</html>
